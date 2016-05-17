@@ -43,7 +43,6 @@ public class Weapon : MonoBehaviour {
 	}
     void Shoot()
     {
-        dmg += PlayerInventory
         Vector2 mousePosition = new Vector2
             (Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
             Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
