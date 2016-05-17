@@ -255,6 +255,9 @@ public class PlayerInventory : MonoBehaviour
                 maxArmor += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Damage")
                 maxDamage += item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "MaxHealth")
+                maxHealth += item.itemAttributes[i].attributeValue;
+
             Debug.Log("attack = " + maxDamage);
         }
         if (HPMANACanvas != null)

@@ -65,3 +65,24 @@ MonoBehaviour:
         attributeValue: 0
     amountOfFinalItem: 0
     timeToCraft: 0
+  - ingredients: 05000000
+    amount: 020000000100000000000000
+    finalItem:
+      itemName: Armor
+      itemID: 7
+      itemDesc: 
+      itemIcon: {fileID: 0}
+      itemModel: {fileID: 0}
+      itemValue: 1
+      itemType: 6
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: Dexterity
+        attributeValue: 10
+      - attributeName: 
+        attributeValue: 10
+    amountOfFinalItem: 1
+    timeToCraft: 0
