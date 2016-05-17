@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public class EnemyStats
     {
         public float maxHealth = 100;
-
+        
         private float _curhealth=10;
         public float currentHealth
         {

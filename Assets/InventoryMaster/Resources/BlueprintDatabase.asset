@@ -54,7 +54,7 @@ MonoBehaviour:
       itemDesc: for hitting
       itemIcon: {fileID: 0}
       itemModel: {fileID: 0}
-      itemValue: 1
+      itemValue: 0
       itemType: 0
       itemWeight: 0
       maxStack: 1
@@ -85,4 +85,23 @@ MonoBehaviour:
       - attributeName: 
         attributeValue: 10
     amountOfFinalItem: 1
+    timeToCraft: 0
+  - ingredients: 0400000009000000
+    amount: 0100000001000000
+    finalItem:
+      itemName: Bow
+      itemID: 8
+      itemDesc: For bowguy
+      itemIcon: {fileID: 0}
+      itemModel: {fileID: 136206, guid: c280a9a9b42599346a2e67d5788cf8e6, type: 2}
+      itemValue: 1
+      itemType: 1
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: Damage
+        attributeValue: 5
+    amountOfFinalItem: 0
     timeToCraft: 0

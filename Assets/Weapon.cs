@@ -4,7 +4,7 @@ using System.Collections;
 public class Weapon : MonoBehaviour {
 
     public float fireRate = 0;
-    public float dmg = 5;
+    public float dmg;
     public float range = 100;
     public LayerMask whatToHit;
     
@@ -43,6 +43,7 @@ public class Weapon : MonoBehaviour {
 	}
     void Shoot()
     {
+        
         Vector2 mousePosition = new Vector2
             (Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
             Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
@@ -60,6 +61,6 @@ public class Weapon : MonoBehaviour {
         Rigidbody2D rb = newArrow.GetComponent<Rigidbody2D>();
         rb.velocity = fireDirection;
         newArrow.transform.rotation = Quaternion.Euler(0f,0f, Mathf.Rad2Deg* Mathf.Atan2(fireDirection.y, fireDirection.x));
-
+        
     }
 }

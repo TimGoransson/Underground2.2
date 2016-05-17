@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class ArrowController : MonoBehaviour {
-    public int damage = 5;
-
+    public float damage = 5;
+    public float fullDamage;
     public float speed;
     public float fallBoundry = -20;
     public float Timer = 2;
@@ -25,11 +25,12 @@ public class ArrowController : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage;
         if (other.tag == "Enemy")
         {
-            other.SendMessageUpwards("Damage", damage);
+            other.SendMessageUpwards("Damage", fullDamage);
             Destroy(gameObject);
-
+            Debug.Log("dammage = " + fullDamage);
         }
         else if (other.tag != "Enemy")
         {

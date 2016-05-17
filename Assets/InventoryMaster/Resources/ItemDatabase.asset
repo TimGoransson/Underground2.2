@@ -99,7 +99,7 @@ MonoBehaviour:
     rarity: 0
     itemAttributes:
     - attributeName: Damage
-      attributeValue: 50
+      attributeValue: 10
   - itemName: Armor
     itemID: 7
     itemDesc: 
@@ -116,3 +116,29 @@ MonoBehaviour:
       attributeValue: 10
     - attributeName: MaxHealth
       attributeValue: 10
+  - itemName: Bow
+    itemID: 8
+    itemDesc: For bowguy
+    itemIcon: {fileID: 21300028, guid: 15efef526e4f8494987b44006254adba, type: 3}
+    itemModel: {fileID: 136206, guid: c280a9a9b42599346a2e67d5788cf8e6, type: 2}
+    itemValue: 1
+    itemType: 1
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Damage
+      attributeValue: 5
+  - itemName: String
+    itemID: 9
+    itemDesc: For bow for bowguy
+    itemIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+    itemModel: {fileID: 100004, guid: b241b59d6a89aff4fbf0bce77e644761, type: 2}
+    itemValue: 1
+    itemType: 12
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
