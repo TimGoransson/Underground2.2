@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour {
 
 	// Use this for initialization
-    public bool SelectedSword = false;
-    public bool SelectedBow = false;
-    public bool SelectedMagic = false;
+    public bool SelectedSword;
+    public bool SelectedBow;
+    public bool SelectedMagic;
 
 	public void StartGame () 
     {
