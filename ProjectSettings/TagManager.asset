@@ -21,6 +21,7 @@ TagManager:
   - EquipmentSystem
   - MainInventory
   - Enemy
+  - CharSelect
   layers:
   - Default
   - TransparentFX

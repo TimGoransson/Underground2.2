@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour {
 
 	// Use this for initialization
+    public bool SelectedSword = false;
+    public bool SelectedBow = false;
+    public bool SelectedMagic = false;
 
 	public void StartGame () 
     {
@@ -28,14 +31,23 @@ public class MenuManager : MonoBehaviour {
     public void SelectSword()
     {
         //activeChar = SwordGuy;
+        SelectedSword = true;
+        SelectedMagic = false;
+        SelectedBow = false;
     }
     public void SelectBow()
     {
         //activeChar = BowGuy;
+        SelectedBow = true;
+        SelectedSword = false;
+        SelectedMagic = false;
     }
     public void SelectMagic()
     {
         //activeChar = MagicGuy;
+        SelectedMagic = true;
+        SelectedBow = false;
+        SelectedSword = false;
     }
 	// Update is called once per frame
 	void Update () {
