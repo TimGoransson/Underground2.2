@@ -103,7 +103,7 @@ MonoBehaviour:
   - itemName: Armor
     itemID: 7
     itemDesc: 
-    itemIcon: {fileID: 0}
+    itemIcon: {fileID: 21300042, guid: 15efef526e4f8494987b44006254adba, type: 3}
     itemModel: {fileID: 0}
     itemValue: 1
     itemType: 6
@@ -113,7 +113,7 @@ MonoBehaviour:
     rarity: 0
     itemAttributes:
     - attributeName: Dexterity
-      attributeValue: 10
+      attributeValue: 25
     - attributeName: MaxHealth
       attributeValue: 10
   - itemName: Bow

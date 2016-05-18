@@ -31,7 +31,7 @@ public class Weapon : MonoBehaviour
         counter++;
         fireRate++;
         // dmg = PlayerInventory.
-        if (fireRate >= 30)
+        if (fireRate >= (30 - GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().Dex))
         {
             if (Input.GetButtonDown("Fire1"))
             {
