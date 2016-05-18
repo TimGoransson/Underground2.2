@@ -20,4 +20,5 @@ public class StatusIndicator : MonoBehaviour {
 
         healthBarRect.localScale =new Vector3(value, healthBarRect.localScale.y, healthBarRect.localScale.z);
     }
+    
 }

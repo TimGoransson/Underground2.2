@@ -25,6 +25,7 @@ public class ArrowController : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        
         fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage;
         if (other.tag == "Enemy")
         {

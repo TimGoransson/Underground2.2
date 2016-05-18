@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
             Damage(999999);
         }
     }
-
+    
     
     public void Damage(float damage)
     {

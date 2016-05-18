@@ -23,6 +23,7 @@ public class PlayerInventory : MonoBehaviour
     Image hpImage;
     Image manaImage;
 
+    public float Dex;
     float maxHealth = 100;
     float maxMana = 100;
     public float maxDamage;
@@ -257,6 +258,8 @@ public class PlayerInventory : MonoBehaviour
                 maxDamage += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "MaxHealth")
                 maxHealth += item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "Dexterity")
+                Dex += item.itemAttributes[i].attributeValue;
 
             Debug.Log("attack = " + maxDamage);
         }
