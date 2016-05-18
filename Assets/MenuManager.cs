@@ -21,6 +21,22 @@ public class MenuManager : MonoBehaviour {
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+    public void Play()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void SelectSword()
+    {
+        //activeChar = SwordGuy;
+    }
+    public void SelectBow()
+    {
+        //activeChar = BowGuy;
+    }
+    public void SelectMagic()
+    {
+        //activeChar = MagicGuy;
+    }
 	// Update is called once per frame
 	void Update () {
 	
