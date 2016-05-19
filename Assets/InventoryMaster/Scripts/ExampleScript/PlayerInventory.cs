@@ -318,9 +318,16 @@ public class PlayerInventory : MonoBehaviour
     public void Damage(float damage)
     {
         currentHealth -= damage;
-            Debug.Log("take dmg");
+        if (HPMANACanvas == null)
+        {
+
+            Debug.Log("it's null brah");
+        }
+
         if (HPMANACanvas != null)
         {
+            
+            Debug.Log("take dmg");
             UpdateManaBar();
             UpdateHPBar();
         }

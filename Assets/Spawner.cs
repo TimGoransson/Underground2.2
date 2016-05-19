@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour {
         {
             //GameObject HPMANACanvas = (GameObject)Instantiate(Resources.Load("HPMANACanvas"));
             //GameObject SwordInventory = (GameObject)Instantiate(Resources.Load("Invetory and crafting 1"));
-            GameObject Bow = (GameObject)Instantiate(Resources.Load("Player"));
+            GameObject Bow = (GameObject)Instantiate(Resources.Load("BowPlayer"));
         }
 	}
 	

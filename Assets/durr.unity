@@ -31884,6 +31884,18 @@ Prefab:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6101138, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887358, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098882, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
   m_IsPrefabParent: 0
