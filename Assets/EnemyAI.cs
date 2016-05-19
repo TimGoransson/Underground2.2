@@ -75,10 +75,18 @@ public class EnemyAI : MonoBehaviour {
     {
         if (target == null)
         {
+            GameObject sResult = GameObject.FindGameObjectWithTag("Player");
             if (!searchingForPlayer)
             {
                 searchingForPlayer = true;
                 StartCoroutine(SearchForPlayer());
+            }
+            else
+            {
+                target = sResult.transform;
+                searchingForPlayer = false;
+                StartCoroutine(UpdatePath());
+                return false;
             }
             return false;
         }
