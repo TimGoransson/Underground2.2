@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
 
     public EnemyLootDrop lootSpawner;
     
-    float damage = 10;
+    float damage = 5;
   
 
     void OnTriggerEnter2D(Collider2D other)

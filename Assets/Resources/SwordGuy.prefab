@@ -690,10 +690,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db4493228a4ba442a891316e3ee246f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  characterSystem: {fileID: 0}
-  craftSystem: {fileID: 0}
-  HPMANACanvas: {fileID: 0}
+  inventory: {fileID: 100006, guid: a58e4d3c31368a64eb9518488df4e15a, type: 2}
+  characterSystem: {fileID: 100004, guid: c09ae6926a2cd6148958f03f14572c54, type: 2}
+  craftSystem: {fileID: 171414, guid: 1dfb12bfd7dc77649953ab74c5ce6c50, type: 2}
+  HPMANACanvas: {fileID: 149120, guid: 06d17b897db8de340acffc0799e07bc5, type: 2}
+  Str: 0
   Dex: 0
   maxDamage: 0
   currentHealth: 100
