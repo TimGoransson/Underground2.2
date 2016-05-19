@@ -1132,7 +1132,7 @@ Prefab:
     - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 139324, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_Name
       value: AlienSpaceship (4)
@@ -5742,7 +5742,7 @@ Prefab:
     - target: {fileID: 11435380, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 11427452, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: statusIndicator
       value: 
@@ -22939,7 +22939,7 @@ Prefab:
     - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 139324, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_Name
       value: AlienSpaceship (3)
@@ -31639,7 +31639,7 @@ Prefab:
     - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 139324, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_Name
       value: AlienSpaceship (2)
@@ -35875,7 +35875,7 @@ Prefab:
     - target: {fileID: 11435380, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 11427452, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: statusIndicator
       value: 
@@ -39319,7 +39319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22433616, guid: 06d17b897db8de340acffc0799e07bc5, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 22433616, guid: 06d17b897db8de340acffc0799e07bc5, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -40866,16 +40866,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 11494140, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: statusIndicator
       value: 
       objectReference: {fileID: 571516731}
-    - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 808565927}
     - target: {fileID: 5058140, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_GravityScale
       value: 0
@@ -40883,6 +40879,10 @@ Prefab:
     - target: {fileID: 139324, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
@@ -41544,7 +41544,7 @@ Prefab:
     - target: {fileID: 11435380, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 11427452, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: statusIndicator
       value: 
@@ -50290,7 +50290,7 @@ Prefab:
     - target: {fileID: 11435380, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 11427452, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: statusIndicator
       value: 
@@ -54168,7 +54168,7 @@ Prefab:
     - target: {fileID: 11477584, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 139324, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_Name
       value: AlienSpaceship (1)
@@ -55650,7 +55650,7 @@ Prefab:
     - target: {fileID: 11435380, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 808565927}
+      objectReference: {fileID: 0}
     - target: {fileID: 11427452, guid: 316df8eca315d344abd115d7fabb45c9, type: 2}
       propertyPath: statusIndicator
       value: 

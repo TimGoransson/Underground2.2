@@ -56,7 +56,7 @@ public class EnemyAI : MonoBehaviour {
 
     IEnumerator SearchForPlayer ()
     {
-        GameObject sResult = GameObject.FindGameObjectWithTag("Hero");
+        GameObject sResult = GameObject.FindGameObjectWithTag("Player");
         if (sResult == null)
         {
             yield return new WaitForSeconds(0.5f);
