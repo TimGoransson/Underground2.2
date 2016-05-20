@@ -29,6 +29,12 @@ public class Tiling : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (cam == null)
+        {
+            cam = Camera.main;
+        }
+
         //Behöver den skapa fler texturer? Om inte så gör inget.
 	if (hasALeftBuddy == false || hasARightBuddy == false) {
             //Beräknar 50% mer av vad kameran kan se på bredden i världen.

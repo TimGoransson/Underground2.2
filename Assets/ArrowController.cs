@@ -4,9 +4,9 @@ using System.Collections;
 public class ArrowController : MonoBehaviour {
     public float damage = 5;
     public float fullDamage;
-    public float speed;
+    public float speed = 10;
     public float fallBoundry = -20;
-    public float Timer = 2;
+    public float timer = 2;
     
     public Rigidbody2D rb;
 	void Start ()
@@ -16,17 +16,18 @@ public class ArrowController : MonoBehaviour {
 	
 	void Update ()
     {
-        Timer -= Time.deltaTime;
-        if (Timer <= 0)
+        timer -= Time.deltaTime;
+        if (timer <= 0)
         {
             Destroy(gameObject);
-            Timer = 2;
+            timer = 2;
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        
-        fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage;
+
+        fullDamage = damage + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().maxDamage 
+            + GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>().Str;
         if (other.tag == "Enemy")
         {
             other.SendMessageUpwards("Damage", fullDamage);

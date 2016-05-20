@@ -23,6 +23,7 @@ public class PlayerInventory : MonoBehaviour
     Image hpImage;
     Image manaImage;
 
+    public float Str;
     public float Dex;
     float maxDex = 29;
     float maxHealth = 100;
@@ -159,6 +160,12 @@ public class PlayerInventory : MonoBehaviour
 
     void Awake()
     {
+        maxHealth = MenuManager.health;
+        maxMana = MenuManager.mana;
+        currentHealth = MenuManager.health;
+        currentMana = MenuManager.mana;
+        Str += MenuManager.Str;
+        Dex += MenuManager.Dex;
         if (HPMANACanvas != null)
         {
             hpText = HPMANACanvas.transform.GetChild(1).GetChild(0).GetComponent<Text>();
@@ -187,6 +194,7 @@ public class PlayerInventory : MonoBehaviour
             characterSystemInventory = characterSystem.GetComponent<Inventory>();
         if (craftSystem != null)
             craftSystemInventory = craftSystem.GetComponent<Inventory>();
+        
     }
 
     void UpdateHPBar()
@@ -264,8 +272,11 @@ public class PlayerInventory : MonoBehaviour
                     Dex = maxDex;
                 else
                     Dex += item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "Strength")
+                    Str += item.itemAttributes[i].attributeValue;
 
-            Debug.Log("attack = " + maxDamage);
+            Debug.Log("Dex = " + Dex);
+            Debug.Log("Str = " + Str);
         }
         if (HPMANACanvas != null)
         {
@@ -293,6 +304,8 @@ public class PlayerInventory : MonoBehaviour
                     Dex = maxDex;
                 else
                     Dex -= item.itemAttributes[i].attributeValue;
+            if (item.itemAttributes[i].attributeName == "Strength")
+                Str -= item.itemAttributes[i].attributeValue;
         }
         if (HPMANACanvas != null)
         {
@@ -305,8 +318,16 @@ public class PlayerInventory : MonoBehaviour
     public void Damage(float damage)
     {
         currentHealth -= damage;
+        if (HPMANACanvas == null)
+        {
+
+            Debug.Log("it's null brah");
+        }
+
         if (HPMANACanvas != null)
         {
+            
+            Debug.Log("take dmg");
             UpdateManaBar();
             UpdateHPBar();
         }

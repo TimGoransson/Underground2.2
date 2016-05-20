@@ -16,19 +16,19 @@ public class Player : MonoBehaviour
     {
         if(transform.position.y <= fallBoundary)
         {
-            Damage(999999);
+            Destroy(gameObject);
         }
     }
     
     
-    public void Damage(float damage)
-    {
-        playerStats.Health -= damage;
-        if (playerStats.Health <= 0)
-        {
-            Debug.Log("KILL PLAYER");
-            GameMaster.KillPlayer(this);
-        }
-    }
+    //public void Damage(float damage)
+    //{
+    //    playerStats.Health -= damage;
+    //    if (playerStats.Health <= 0)
+    //    {
+    //        Debug.Log("KILL PLAYER");
+    //        GameMaster.KillPlayer(this);
+    //    }
+    //}
    
 }
